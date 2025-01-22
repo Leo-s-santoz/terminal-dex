@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"; 
 import readline from "readline";
 import Fuse from "fuse.js";
 import Table from "cli-table3";
@@ -47,7 +47,7 @@ const fetchData = async () => {
   const response = await axios.get(
     "https://pokeapi.co/api/v2/pokemon?offset=0&limit=151",
   );
-  const pokemonTotal = 9;
+  const pokemonTotal = 151;
   const pokemonList = [];
 
   //return name and url with pokemon info
